@@ -1,7 +1,7 @@
 defmodule WeatherDashboard do
   def fetch_weather(city, state_or_country) do
     base_url = "https://api.openweathermap.org/data/2.5/weather"
-    api_key = "5fc81538b2d698bf60e9022999671874"
+    api_key = "Enter API Key"
 
     location = URI.encode("#{city}, #{state_or_country}, US")
     url = "#{base_url}?q=#{location}&appid=#{api_key}&units=imperial"
