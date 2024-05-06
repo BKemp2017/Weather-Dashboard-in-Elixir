@@ -1,8 +1,10 @@
 defmodule WeatherDashboard do
   def fetch_weather(city, state_or_country) do
     base_url = "https://api.openweathermap.org/data/2.5/weather"
+<<<<<<< HEAD
     # Fetch the API key from the environment variable
     api_key = System.get_env("OPENWEATHER_API_KEY")
+=======
 
     location = URI.encode("#{city}, #{state_or_country}, US")
     url = "#{base_url}?q=#{location}&appid=#{api_key}&units=imperial"
